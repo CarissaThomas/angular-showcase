@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.fl-mixes {
+    position: relative;
+    height: 93vh;
+    font-family: 'newtown';
+    text-transform: uppercase;
+    
+    div:first-child {
+        border-right: none;
+    }
+
+    h1 {
+        color: $pressed-purple;
+        border-bottom: 1px solid $pressed-purple;
+    }
+
+    div {
+        border: 1px solid $pressed-purple;
+        height: 93vh;
+        border-top: none;
+    }
+
+    p {
+        color: $pressed-purple;
+    }
+
+    img {
+        width: 170px;
+        right: 10px;
+        margin-top: 15px;
+    }
+
+
+}

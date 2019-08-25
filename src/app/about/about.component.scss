@@ -1,0 +1,65 @@
+@import '../../variables';
+
+.fl-about {
+    position: relative;
+    font-family: 'newtown';
+
+    div:first-child {
+        border-right: none;
+    }
+
+    div {
+        border: 1px solid $pressed-red;
+        height: 93vh;
+        border-top: none;
+    }
+
+    h1 {
+        color: $pressed-red;
+        border-bottom: 1px solid $pressed-red;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $pressed-red;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+        right: 10px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    a:first-child {
+        margin-right: 10px;
+        color: $pressed-blue !important;
+        cursor: pointer;
+    }
+}
+
+.about-contact {
+    border: none !important;
+    position: absolute;
+    bottom: 25px;
+    display: inline-block;
+    max-height: 50px;
+    font-family: 'newtown';
+    text-transform: uppercase;
+    
+    span {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    img {
+        z-index: 10;
+        width: 42px;
+        height: 40px;
+        margin-top: 0px;
+        margin-right: -2px;
+        cursor: pointer;
+    }
+
+}

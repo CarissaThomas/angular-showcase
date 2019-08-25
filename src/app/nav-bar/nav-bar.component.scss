@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.po-navbar {
+    background-color: $pressed-yellow;
+    border-bottom: 1px solid black;
+    font-family: 'newtown';
+    text-transform: uppercase;
+
+}
+
+.fl-nav-item{
+    a {
+        color: black;
+        border:1px solid #000;
+        border-left: 1px solid $pressed-red;
+        border-top: 1px solid $pressed-red;
+        margin-right: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 15px;
+    }
+
+    a:hover {
+        box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
+        color: black !important;
+    }
+}
+
+.active-link {
+    background-color: $pressed-red;
+    color: $pressed-white !important;
+}

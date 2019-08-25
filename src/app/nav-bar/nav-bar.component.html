@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light  po-navbar">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active fl-nav-item">
+          <a class="nav-link" [routerLink]="['']">HOME<span class="sr-only">(current)</span></a>
+        </li>      
+        <li class="nav-item fl-nav-item">
+          <a [routerLinkActive]="'active-link'" [routerLink]="['/mixes']" class="nav-link" >MIXES</a>
+        </li>
+        <li class="nav-item fl-nav-item">
+            <a class="nav-link" [routerLinkActive]="'active-link'" [routerLink]="['/events']">EVENTS</a>
+        </li>
+        <li class="nav-item fl-nav-item">
+          <a class="nav-link" [routerLinkActive]="'active-link'" [routerLink]="['/artists']">ARTISTS</a>
+      </li>
+      <li class="nav-item fl-nav-item">
+        <a class="nav-link" [routerLinkActive]="'active-link'" [routerLink]="['/recordlabel']">Record Label</a>
+    </li>
+      <li class="nav-item fl-nav-item">
+          <a class="nav-link" [routerLinkActive]="'active-link'" [routerLink]="['/about']">ABOUT/CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
