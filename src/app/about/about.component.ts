@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -11,13 +11,15 @@ export class AboutComponent implements OnInit {
   public typewriter_display: string = "";
   public mobile: boolean;
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
     this.typingCallback(this);
     if (window.screen.width === 360) { // 768px portrait
       this.mobile = true;
     }
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#1B1B1D';
+
   }
 
   typingCallback(that) {

@@ -10,7 +10,7 @@ export class HomePageComponent implements OnInit {
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#F1F1F1';
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#1B1B1D';
   }
 
 }

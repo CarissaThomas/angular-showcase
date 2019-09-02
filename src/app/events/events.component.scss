@@ -9,18 +9,18 @@
     }
 
     div {
-        border: 1px solid $pressed-green;
+        border: 1px solid $fl-green;
         height: 93vh;
         border-top: none;
     }
 
     h1 {
-        color: $pressed-green;
-        border-bottom: 1px solid $pressed-green;
+        color: $fl-green;
+        border-bottom: 1px solid $fl-green;
     }
 
     p {
-        color: $pressed-green;
+        color: $fl-green;
     }
 
     img {
@@ -28,7 +28,7 @@
         width: 150px;
         right: 10px;
         margin-top: 20px;
-        margin-right: 10px;
+        margin-left: 15px;
     }
 
 }

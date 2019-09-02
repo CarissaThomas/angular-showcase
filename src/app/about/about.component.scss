@@ -9,19 +9,19 @@
     }
 
     div {
-        border: 1px solid $pressed-red;
+        border: 1px solid $fl-yellow;
         height: 93vh;
         border-top: none;
     }
 
     h1 {
-        color: $pressed-red;
-        border-bottom: 1px solid $pressed-red;
+        color: $fl-yellow;
+        border-bottom: 1px solid $fl-yellow;
         text-transform: uppercase;
     }
 
     p {
-        color: $pressed-red;
+        color: $fl-yellow;
     }
 
     img {
@@ -29,12 +29,11 @@
         width: 150px;
         right: 10px;
         margin-top: 20px;
-        margin-right: 10px;
+        margin-left: 13px;
     }
 
     a:first-child {
         margin-right: 10px;
-        color: $pressed-blue !important;
         cursor: pointer;
     }
 }
@@ -51,6 +50,11 @@
     span {
         display: inline-block;
         font-size: 13px;
+        color: $fl-yellow;
+
+        a {
+            color: $fl-yellow;
+        }
     }
 
     img {

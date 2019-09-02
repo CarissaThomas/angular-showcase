@@ -37,10 +37,9 @@ $duration: 30s;
   width: 100%;
   overflow: hidden;
   height: 2rem;
-  background-color: $pressed-yellow; 
+  background-color: $fl-blue; 
   padding-left: 100%;
   box-sizing: content-box;
-  border-top: solid 1px black;
   .ticker {
 
     display: inline-block;
@@ -65,7 +64,7 @@ $duration: 30s;
 
       padding: 0 2rem;
       font-size: 1rem;
-      color: black;   
+      color: $fl-white;   
 
     }
 
@@ -81,7 +80,7 @@ h1,h2,p {padding: 0 5%;}
   font-family: 'newtown';
   text-transform: uppercase;
   a {
-    color: black;
+    color: $fl-red;
     cursor: pointer;
   }
   img{

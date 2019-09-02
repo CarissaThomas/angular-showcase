@@ -1,19 +1,19 @@
 @import '../../variables';
 
-.po-navbar {
-    background-color: $pressed-yellow;
-    border-bottom: 1px solid black;
+.fl-navbar {
+    background-color: $fl-blue;
     font-family: 'newtown';
     text-transform: uppercase;
+}
 
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: $fl-white;
 }
 
 .fl-nav-item{
     a {
-        color: black;
-        border:1px solid #000;
-        border-left: 1px solid $pressed-red;
-        border-top: 1px solid $pressed-red;
+        color: $fl-white;
+        border: 1px solid $fl-red;
         margin-right: 20px;
         padding-top: 4px;
         padding-bottom: 4px;
@@ -21,12 +21,11 @@
     }
 
     a:hover {
-        box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
-        color: black !important;
+        color: $fl-red !important;
     }
 }
 
 .active-link {
-    background-color: $pressed-red;
-    color: $pressed-white !important;
+    background-color: $fl-red;
+    color: $fl-white !important;
 }
