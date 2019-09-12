@@ -11,7 +11,7 @@ export class ArtistsComponent implements OnInit {
   artists: Artists[] = [
     { id: 1, 
       name: 'Carissa illy',
-      bio: 'Carissa illy is an Acid House DJ hailing from the cold mountains of Boulder, Colorado.  She has lived and played in Washington, Los Angeles, Italy, and now Portland.  Carissa is on her way up with production and mixes that have begun to make some noise in Portland.  She is here to nurture the dance scene with European ideals that encourage DJs to be represented as not only mixesians but cultural vanguards.  She believes that Portland deserves the best and she is here to deliver.  ',
+      bio: 'Carissa illy is an Acid House DJ hailing from the cold mountains of Boulder, Colorado.  She has lived and played in Washington, Los Angeles, Italy, and now Portland.  Carissa is on her way up with production and mixes that have begun to make some noise in Portland.  She is here to nurture the dance scene and encourage DJs to be represented as not only mixesians but cultural vanguards.  She believes that Portland deserves the best and she is here to deliver.  ',
       image: 'carissabio.jpeg',
       subtitle: 'Acid House',
       soundcloud:'carissailly',

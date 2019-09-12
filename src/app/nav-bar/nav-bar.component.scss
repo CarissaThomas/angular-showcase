@@ -21,10 +21,15 @@
     }
 
     a:hover {
-        color: $fl-red !important;
+        color: $fl-yellow !important;
     }
 }
 
+.navbar-collapse {
+    a.nav-link {
+        border: none;
+    }
+}
 .active-link {
     background-color: $fl-red;
     color: $fl-white !important;

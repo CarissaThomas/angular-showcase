@@ -32,3 +32,33 @@
     }
 
 }
+
+.fl-contact {
+    border: none !important;
+    position: absolute;
+    bottom: 25px;
+    display: inline-block;
+    max-height: 50px;
+    font-family: 'newtown';
+    text-transform: uppercase;
+    
+    span {
+        display: inline-block;
+        font-size: 13px;
+        color: $fl-red;
+
+        a {
+            color: $fl-red;
+        }
+    }
+
+    img {
+        z-index: 10;
+        width: 42px;
+        height: 40px;
+        margin-top: 0px;
+        margin-right: -2px;
+        cursor: pointer;
+    }
+
+}
