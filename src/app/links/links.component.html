@@ -1,0 +1,16 @@
+<div class="fl-links">
+  <div class="row">
+    <div class="col-md-2 d-none d-md-block"> 
+      <img src="../../assets/moduleImages/linkicon.png">
+      <img src="../../assets/moduleImages/linkicon.png">
+      <img src="../../assets/moduleImages/linkicon.png">
+    </div>
+    <div class="col-md-10 col-sm-12 col-xs-12"> 
+      <h1>Links</h1>
+        <li *ngFor="let link of links"
+        (click)="goToLink(link.link)">
+        <span>{{link.name}}</span> 
+        </li>
+    </div>
+  </div>
+</div>

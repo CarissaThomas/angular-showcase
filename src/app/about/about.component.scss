@@ -39,22 +39,24 @@
 }
 
 .about-contact {
-    border: none !important;
-    position: absolute;
-    bottom: 25px;
     display: inline-block;
     max-height: 50px;
-    font-family: 'newtown';
+    font-family: "newtown";
     text-transform: uppercase;
-    
+
     span {
         display: inline-block;
         font-size: 13px;
-        color: $fl-yellow;
+        color: $fl-red;
 
         a {
-            color: $fl-yellow;
+            color: $fl-red;
+            text-decoration: underline;
         }
+    }
+
+    a:hover {
+        color: $fl-yellow !important;
     }
 
     img {

@@ -11,6 +11,7 @@ import { mixesComponent } from './mixes/mixes.component';
 import { EventsComponent } from './events/events.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { RecordLabelComponent } from './record-label/record-label.component';
+import { LinksComponent } from './links/links.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'recordlabel',
     component: RecordLabelComponent
+  },
+  {
+    path: 'links',
+    component: LinksComponent
   }
 ];
 
@@ -51,6 +56,7 @@ const routes: Routes = [
     EventsComponent,
     ArtistsComponent,
     RecordLabelComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
