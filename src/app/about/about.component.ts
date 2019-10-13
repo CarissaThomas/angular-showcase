@@ -7,30 +7,30 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  public typewriter_text: string = "About us coming soon - we take this seriously :)";
-  public typewriter_display: string = "";
-  public mobile: boolean;
+  //public typewriter_text: string = "About us coming soon - we take this seriously :)";
+  //public typewriter_display: string = "";
+  //public mobile: boolean;
 
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
-    this.typingCallback(this);
-    if (window.screen.width === 360) { // 768px portrait
-      this.mobile = true;
-    }
+    // this.typingCallback(this);
+    // if (window.screen.width === 360) { // 768px portrait
+    //   this.mobile = true;
+    // }
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#1B1B1D';
 
   }
 
-  typingCallback(that) {
-    let total_length = that.typewriter_text.length;
-    let current_length = that.typewriter_display.length;
-    if (current_length < total_length) {
-      that.typewriter_display += that.typewriter_text[current_length];
-    } else {
-      that.typewriter_display = "";
-    }
-    setTimeout(that.typingCallback, 50, that);
-  }
+  // typingCallback(that) {
+  //   let total_length = that.typewriter_text.length;
+  //   let current_length = that.typewriter_display.length;
+  //   if (current_length < total_length) {
+  //     that.typewriter_display += that.typewriter_text[current_length];
+  //   } else {
+  //     that.typewriter_display = "";
+  //   }
+  //   setTimeout(that.typingCallback, 100, that);
+  // }
 
 }

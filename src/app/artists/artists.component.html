@@ -10,8 +10,8 @@
       <h1>{{selectedArtist.name}}</h1>
       <img src= "../../../assets//artistImages/{{selectedArtist.image}}">
       <div class="link-div" *ngIf="selectedArtist">
-        <a target="_blank" href="https://www.soundcloud.com/{{selectedArtist.soundcloud}}"><img src="../assets/icons/insta.png"></a>
-        <a target="_blank" href="https://instagram.com/{{selectedArtist.instagram}}"><img src="../assets/icons/soundcloud.png"></a>
+        <a target="_blank" *ngIf="selectedArtist.soundcloud != ''" href="https://www.soundcloud.com/{{selectedArtist.soundcloud}}"><img src="../assets/icons/soundcloud.png"></a>
+        <a target="_blank" *ngIf="selectedArtist.instagram != ''" href="https://instagram.com/{{selectedArtist.instagram}}"><img src="../assets/icons/insta.png"></a>
       </div>
       <p>{{selectedArtist.bio}}</p>
   </div>
