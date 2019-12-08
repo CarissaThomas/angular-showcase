@@ -13,4 +13,8 @@ export class EventsComponent implements OnInit {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#1B1B1D';
   }
 
+  openEvent() {
+    window.open("https://www.facebook.com/events/529581850946217/", "_blank");
+  }
+
 }

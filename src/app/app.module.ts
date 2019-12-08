@@ -7,7 +7,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { mixesComponent } from './mixes/mixes.component';
 import { EventsComponent } from './events/events.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { RecordLabelComponent } from './record-label/record-label.component';
@@ -23,10 +22,6 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
-  },
-  {
-    path: 'mixes',
-    component: mixesComponent
   },
   {
     path: 'events',
@@ -52,7 +47,6 @@ const routes: Routes = [
     HomePageComponent,
     NavBarComponent,
     AboutComponent,
-    mixesComponent,
     EventsComponent,
     ArtistsComponent,
     RecordLabelComponent,
