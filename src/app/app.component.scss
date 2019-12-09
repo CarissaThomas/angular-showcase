@@ -1,5 +1,32 @@
 @import './../variables.scss';
 
+///Website structure
+
+.website-structure {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "side-images" "main-content";
+  grid-row: 1;
+}
+
+.side-images {
+  grid-area: side-images;
+  grid-column-start: 1;
+  border-right: $fl-green 1px solid;
+
+  img {
+    width: 200px;
+  }
+}
+
+.main-content {
+  grid-area: main-content;
+  grid-column-start: 2;
+  grid-row: 1;
+}
+
+////Ticker CSS
 
 * { box-sizing: border-box; }
 $duration: 30s;

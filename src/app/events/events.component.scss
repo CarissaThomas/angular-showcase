@@ -1,49 +1,53 @@
 @import '../../variables';
 
-.fl-events {
+img {
+    width: 500px;
+}
+
+h1 {
     font-family: 'newtown';
     text-transform: uppercase;
-    
-    div:first-child {
-        border-right: none;
-    }
-
-    div {
-        border: 1px solid $fl-green;
-        height: 93vh;
-        border-top: none;
-        border-bottom: none;
-    }
-
-    h1 {
-        color: $fl-green;
-        border-bottom: 1px solid $fl-green;
-    }
-
-    p {
-        color: $fl-green;
-    }
-
-    img {
-        height: 150px;
-        width: 150px;
-        right: 10px;
-        margin-top: 20px;
-        margin-left: 15px;
-        cursor: pointer;
-    }
-    
-    a {
-        display: block;
-        color: $fl-green;
-        text-decoration: underline;
-        padding-left: 17px;
-        margin-bottom: -15px;
-        cursor: pointer;
-    } 
+    color: $fl-green;
+    padding-left: 25px;
+    border-bottom: 1px $fl-green solid;
+    padding-top: 10px;
 }
 
-.event-image {
-    height: auto !important;
-    width: 50% !important;
-}
+// .fl-events {
+//     font-family: 'newtown';
+//     text-transform: uppercase;
+    
+//     div:first-child {
+//         border-right: none;
+//     }
+
+//     div {
+//         border: 1px solid $fl-green;
+//         height: 93vh;
+//         border-top: none;
+//         border-bottom: none;
+//     }
+
+//     h1 {
+//         color: $fl-green;
+//         border-bottom: 1px solid $fl-green;
+//     }
+
+//     p {
+//         color: $fl-green;
+//     }
+    
+//     a {
+//         display: block;
+//         color: $fl-green;
+//         text-decoration: underline;
+//         padding-left: 17px;
+//         margin-bottom: -15px;
+//         cursor: pointer;
+//     } 
+// }
+
+// .event-image {
+//     height: auto !important;
+//     width: 50% !important;
+// }
