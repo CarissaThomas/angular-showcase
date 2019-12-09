@@ -1,10 +1,15 @@
 //Global styling 
 
-h1 {
-    font-family: 'newtown';
-  }
-
   a {
     text-decoration: underline !important;
     cursor: pointer;
   }
+
+  h1 {
+    font-family: 'newtown';
+    text-transform: uppercase;
+    color: $fl-green;
+    padding-left: 25px;
+    border-bottom: 1px $fl-green solid;
+    padding-top: 10px;
+}

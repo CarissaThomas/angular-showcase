@@ -1,16 +1,12 @@
 @import '../../variables';
+@import '../../global.styles.scss';
 
 img {
-    width: 500px;
+    width: 75%;
 }
 
 h1 {
-    font-family: 'newtown';
-    text-transform: uppercase;
-    color: $fl-green;
-    padding-left: 25px;
     border-bottom: 1px $fl-green solid;
-    padding-top: 10px;
 }
 
 // .fl-events {
