@@ -13,12 +13,20 @@
 .side-images {
   grid-area: side-images;
   grid-column-start: 1;
-  border-right: $fl-green 1px solid;
 
   img {
     width: 75%;
     margin-left: 25px;
     margin-right: 25px;
+  }
+}
+
+.no-side-image {
+  grid-template-columns: 100% !important;
+  display: block;
+  
+  .side-images {
+    display: none !important;
   }
 }
 

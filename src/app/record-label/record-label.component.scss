@@ -1,64 +1,15 @@
 @import '../../variables';
+@import '../../global.styles.scss';
 
-.fl-record {
-    font-family: 'newtown';
-    text-transform: uppercase;
-    
-    div:first-child {
-        border-right: none;
-    }
-
-    div {
-        border: 1px solid $fl-red;
-        height: 93vh;
-        border-top: none;
-    }
-
-    h1 {
-        color: $fl-red;
-        border-bottom: 1px solid $fl-red;
-    }
-
-    p {
-        color: $fl-red;
-    }
-
-    img {
-        height: 120px;
-        width: 120px;
-        margin-top: 20px;
-        margin-left: 30px;
-        margin-top: 40px;
-    }
-
+img {
+    width: 75%;
 }
 
-.fl-contact {
-    border: none !important;
-    position: absolute;
-    bottom: 25px;
-    display: inline-block;
-    max-height: 50px;
-    font-family: 'newtown';
-    text-transform: uppercase;
-    
-    span {
-        display: inline-block;
-        font-size: 13px;
-        color: $fl-red;
+p {
+    color: $fl-red;
+}
 
-        a {
-            color: $fl-red;
-        }
-    }
-
-    img {
-        z-index: 10;
-        width: 42px;
-        height: 40px;
-        margin-top: 0px;
-        margin-right: -2px;
-        cursor: pointer;
-    }
-
+h1 {
+    border-bottom: 1px $fl-red solid;
+    color: $fl-red;
 }

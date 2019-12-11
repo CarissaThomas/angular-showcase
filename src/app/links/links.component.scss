@@ -1,51 +1,25 @@
 @import '../../variables';
 
-.fl-links {
-    font-family: 'newtown';
-    text-transform: uppercase;
-    
-    div:first-child {
-        border-right: none;
-        border-bottom: none;
-    }
+@import '../../global.styles.scss';
 
-    div {
-        border: 1px solid $fl-white;
-        height: 100%;
-        border-top: none;
-    }
+h1 {
+    border-bottom: 1px $fl-white solid;
+    color: $fl-white;
+}
 
-    h1 {
+li {
+    background-color: $fl-white;
+    list-style-type: none;
+    margin: 30px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: $fl-red;
+    span {
         color: $fl-white;
-        border-bottom: 1px solid $fl-white;
+  
     }
-
-    p {
-        color: $fl-white;
-    }
-
-    img {
-        height: 150px;
-        width: 150px;
-        right: 10px;
-        margin-top: 20px;
-        margin-left: 15px;
-    }
-
-    li {
-        background-color: $fl-white;
-        list-style-type: none;
-        margin: 30px;
-        text-align: center;
-        padding: 15px;
-        cursor: pointer;
-    }
-
-    li:hover {
-        background-color: $fl-red;
-        span {
-            color: $fl-white;
-        }
-    }
-
 }

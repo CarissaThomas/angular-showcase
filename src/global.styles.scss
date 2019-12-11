@@ -3,13 +3,23 @@
   a {
     text-decoration: underline !important;
     cursor: pointer;
+    font-family: 'newtown';
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: 'newtown';
+    text-transform: uppercase;
+  }
+
+  span {
+    font-family: 'newtown';
+    text-transform: uppercase;
   }
 
   h1 {
     font-family: 'newtown';
     text-transform: uppercase;
-    color: $fl-green;
-    padding-left: 25px;
     border-bottom: 1px $fl-green solid;
     padding-top: 10px;
 }

@@ -7,43 +7,5 @@ img {
 
 h1 {
     border-bottom: 1px $fl-green solid;
+    color: $fl-green;
 }
-
-// .fl-events {
-//     font-family: 'newtown';
-//     text-transform: uppercase;
-    
-//     div:first-child {
-//         border-right: none;
-//     }
-
-//     div {
-//         border: 1px solid $fl-green;
-//         height: 93vh;
-//         border-top: none;
-//         border-bottom: none;
-//     }
-
-//     h1 {
-//         color: $fl-green;
-//         border-bottom: 1px solid $fl-green;
-//     }
-
-//     p {
-//         color: $fl-green;
-//     }
-    
-//     a {
-//         display: block;
-//         color: $fl-green;
-//         text-decoration: underline;
-//         padding-left: 17px;
-//         margin-bottom: -15px;
-//         cursor: pointer;
-//     } 
-// }
-
-// .event-image {
-//     height: auto !important;
-//     width: 50% !important;
-// }
