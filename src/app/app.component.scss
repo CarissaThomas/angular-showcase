@@ -21,6 +21,13 @@
   }
 }
 
+.main-content {
+  grid-area: main-content;
+  grid-column-start: 2;
+  grid-row: 1;
+}
+
+
 .no-side-image {
   grid-template-columns: 100% !important;
   display: block;
@@ -48,12 +55,6 @@
     grid-column-start: 1 !important;
     grid-row: 1;
   }
-}
-
-.main-content {
-  grid-area: main-content;
-  grid-column-start: 2;
-  grid-row: 1;
 }
 
 ////Ticker CSS

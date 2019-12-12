@@ -7,9 +7,15 @@
     text-transform: uppercase;
   }
 
-  p {
+  li {
+    cursor: pointer;
     font-family: 'newtown';
     text-transform: uppercase;
+  }
+
+  p {
+    font-family: 'newtown';
+    margin-bottom: 35px;
   }
 
   span {
@@ -20,6 +26,5 @@
   h1 {
     font-family: 'newtown';
     text-transform: uppercase;
-    border-bottom: 1px $fl-green solid;
     padding-top: 10px;
 }
