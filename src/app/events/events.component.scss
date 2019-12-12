@@ -2,11 +2,18 @@
 @import '../../global.styles.scss';
 
 img {
-    width: 75%;
+    width: 55%;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 h1 {
     border-bottom: 1px $fl-green solid;
     color: $fl-green;
+}
+
+@media screen and (max-width: 767px) { 
+    img {
+        width: 100%;
+    }
 }
