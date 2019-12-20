@@ -13,6 +13,7 @@ export class ArtistsComponent implements OnInit {
 
   constructor(private elementRef: ElementRef) {
     this.artists = artists;
+    this.selectedArtist = artists[0];
    }
 
   ngOnInit() {
