@@ -1,4 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { Photos } from "../data/photos";
+import { PhotosService } from "../photos/photos.service";
 
 @Component({
   selector: 'app-events',
@@ -6,15 +8,29 @@ import { Component, OnInit, ElementRef } from '@angular/core';
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent implements OnInit {
+  photos: object;
 
-  constructor(private elementRef: ElementRef) { }
+  constructor(private elementRef: ElementRef, private photosService: PhotosService) {
+    this.photos = Photos;
+   }
 
   ngOnInit() {
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#1B1B1D';
+
+
+
   }
 
-  openEvent(url) {
-    window.open(url, "_blank");
+  openPhotos(photoSelection) {
+    var keys = Object.keys(this.photos); //get keys from object as an array
+
+    keys.forEach(function (key) { //loop through keys array
+      if (photoSelection == key) {
+        this.photosService.setSelectedPhotos(this.Photos[key]);
+      }
+    });
+
   }
+
+
 
 }

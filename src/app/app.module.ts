@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-
-import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { EventsComponent } from './events/events.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { RecordLabelComponent } from './record-label/record-label.component';
 import { LinksComponent } from './links/links.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+import { PhotosComponent } from './photos/photos.component';
 
+import { PhotosService } from "./photos/photos.service";
 
 const routes: Routes = [
 
@@ -38,6 +40,10 @@ const routes: Routes = [
   {
     path: 'links',
     component: LinksComponent
+  },
+  {
+    path: 'photos',
+    component: PhotosComponent
   }
 ];
 
@@ -50,13 +56,17 @@ const routes: Routes = [
     EventsComponent,
     ArtistsComponent,
     RecordLabelComponent,
-    LinksComponent
+    LinksComponent,
+    PhotosComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    NgxGalleryModule
   ],
-  providers: [],
+  providers: [
+    PhotosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

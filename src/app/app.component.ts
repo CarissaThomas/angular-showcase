@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router, NavigationEnd } from "@angular/router";
-
 
 @Component({
   selector: 'app-root',
@@ -13,12 +12,14 @@ export class AppComponent  {
   imageSrc: string;
   isImageDisplayed: boolean;
 
-  constructor(public router: Router){
+  constructor(public router: Router, private elementRef: ElementRef){
     this.router.events.subscribe((ev) => {
       if (ev instanceof NavigationEnd) { 
         this.getImageLocation();
       }
     });
+
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#1B1B1D';
   }
 
   getImageLocation() {
