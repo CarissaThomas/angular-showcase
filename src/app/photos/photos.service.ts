@@ -10,7 +10,7 @@ export class PhotosService {
 
    
   
-  set setSelectedPhotos(selectedPhotos){
+  setSelectedPhotos(selectedPhotos){
     this.selectedPhotos = selectedPhotos;
   }
 

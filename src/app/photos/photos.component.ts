@@ -7,6 +7,7 @@ import { PhotosService } from "../photos/photos.service";
   templateUrl: './photos.component.html',
   styleUrls: ['./photos.component.scss']
 })
+
 export class PhotosComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
@@ -15,51 +16,46 @@ export class PhotosComponent implements OnInit {
   constructor(private photosService: PhotosService) { }
 
   ngOnInit() {
+
     this.galleryOptions = [
       {
-          width: '600px',
-          height: '400px',
-          thumbnailsColumns: 4,
-          imageAnimation: NgxGalleryAnimation.Slide
+          width: "67%",
+          height: "85vh",
+          thumbnails: false,
+          imageAnimation: NgxGalleryAnimation.Slide,
       },
       // max-width 800
       {
           breakpoint: 800,
-          width: '100%',
-          height: '600px',
-          imagePercent: 80,
-          thumbnailsPercent: 20,
-          thumbnailsMargin: 20,
-          thumbnailMargin: 20
+          width: "67%",
+          height: "85vh",
       },
       // max-width 400
       {
+          width: "67%",
+          height: "85vh",
           breakpoint: 400,
-          preview: false
       }
   ];
-
-
-  // this.galleryImages = [
-  //     {
-  //         small: "https://lh3.googleusercontent.com/EanCu_-o4o3H3aHQIMYGhyAjqILZ4v20Yo5ouMPu3gjeMfKwcg5cg1bjWOOc0d3lWynGTctspuwmpnAX6RSCbSyw_r6aseGIaV2sHnCqlT6O5yVEsQ-diM1LjSVDIMnxUEK_YTV2-g=w1920-h1080",
-  //         medium: "https://lh3.googleusercontent.com/EanCu_-o4o3H3aHQIMYGhyAjqILZ4v20Yo5ouMPu3gjeMfKwcg5cg1bjWOOc0d3lWynGTctspuwmpnAX6RSCbSyw_r6aseGIaV2sHnCqlT6O5yVEsQ-diM1LjSVDIMnxUEK_YTV2-g=w1920-h1080",
-  //         big: "https://lh3.googleusercontent.com/EanCu_-o4o3H3aHQIMYGhyAjqILZ4v20Yo5ouMPu3gjeMfKwcg5cg1bjWOOc0d3lWynGTctspuwmpnAX6RSCbSyw_r6aseGIaV2sHnCqlT6O5yVEsQ-diM1LjSVDIMnxUEK_YTV2-g=w1920-h1080"
-  //     }
-  //   ];
+    this.setGalleryPhotos();
   }
 
   setGalleryPhotos() {
-    this.photosService.selectedPhotos.forEach(photo => {
-      this.galleryImages.push(
+    var galleryImg = [];
+
+    for (let index = 0; index < this.photosService.selectedPhotos.length; index++) {
+      const photo = this.photosService.selectedPhotos[index];
+
+      galleryImg.push(
         {
           small: photo,
           medium: photo,
           big: photo
         }
-      );
-    });
-    
+      )
+      
+    }
+    this.galleryImages = galleryImg;
   }
 
 }

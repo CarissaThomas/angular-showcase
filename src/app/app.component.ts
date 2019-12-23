@@ -37,11 +37,13 @@ export class AppComponent  {
       } 
 
       case '/artists': { 
+        this.imageSrc = "";
         this.isImageDisplayed = false;
          break; 
       } 
 
       case '/': { 
+        this.imageSrc = "";
         this.isImageDisplayed = false;
          break; 
       } 
@@ -56,7 +58,15 @@ export class AppComponent  {
         this.imageSrc = "../../assets/moduleImages/record-label.png";
         this.isImageDisplayed = true;
          break; 
-      } 
+      }
+
+      case '/photos': { 
+        this.imageSrc = "";
+        this.isImageDisplayed = false;
+         break; 
+      }
+      
+      
       default: { 
          //statements; 
          break; 
