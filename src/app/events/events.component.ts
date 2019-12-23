@@ -2,6 +2,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 import { Photos } from "../data/photos";
 import { PhotosService } from "../photos/photos.service";
 import { Router } from '@angular/router';
+import { Events } from "../data/events";
 
 @Component({
   selector: 'app-events',
@@ -10,9 +11,11 @@ import { Router } from '@angular/router';
 })
 export class EventsComponent implements OnInit {
   photos: object;
+  events: object[]; 
 
   constructor(private elementRef: ElementRef, private router: Router, private photosService: PhotosService) {
     this.photos = Photos;
+    this.events = Events;
    }
 
   ngOnInit() {

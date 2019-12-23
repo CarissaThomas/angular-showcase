@@ -1,5 +1,12 @@
-<h1>Events - click poster for photos</h1>
-<img (click)="openPhotos('LiquorStoreNov_2019')" src="../../assets/eventimages/instagram-jan3rd-ls.png">
-<img (click)="openEvent('https://www.facebook.com/events/381061899223782/')" src="../../assets/eventimages/instagram-nov1st-ls.png">
+<h1>Events</h1>
+<div *ngFor="let event of events" >
+    <p>{{event.tagline}}</p>
+    <img [src]="event.imageSrc" (click)="openPhotos(event.title)">
+</div>
 
 
+<!-- <img (click)="openPhotos('')" src="../../assets/eventimages/instagram-jan3rd-ls.png">
+<p>Coming soong</p>
+<img (click)="openPhotos('LiquorStoreNov_2019')" src="../../assets/eventimages/instagram-nov1st-ls.png">
+
+ -->

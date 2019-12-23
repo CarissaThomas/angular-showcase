@@ -23,18 +23,21 @@ export class PhotosComponent implements OnInit {
           height: "85vh",
           thumbnails: false,
           imageAnimation: NgxGalleryAnimation.Slide,
+          preview: false
       },
       // max-width 800
       {
           breakpoint: 800,
           width: "67%",
           height: "85vh",
+          preview: false
       },
       // max-width 400
       {
-          width: "67%",
-          height: "85vh",
+          width: "100%",
+          height: "81vh",
           breakpoint: 400,
+          preview: false
       }
   ];
     this.setGalleryPhotos();
