@@ -28,7 +28,7 @@ export class PhotosComponent implements OnInit {
       // max-width 800
       {
           breakpoint: 800,
-          width: "67%",
+          width: "100%",
           height: "85vh",
           preview: false
       },
