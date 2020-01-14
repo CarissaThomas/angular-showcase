@@ -1,7 +1,7 @@
 
 
 export const links = [
-    {name: "Jan 3rd Acid House Show", link: "https://www.facebook.com/events/529581850946217/"},
+    {name: "Feb 7th Elite Fleet Show", link: "https://www.facebook.com/events/1393929310766154/"},
     {name: "Flight Mixcloud", link: "https://www.mixcloud.com/FLIGHTPDX/"},    
     {name: "Flight Facebook", link: "https://www.facebook.com/flight.pdx/"},
     {name: "FMPDX", link: "https://www.facebook.com/fmpdx/"},
