@@ -1,7 +1,7 @@
 
 
 export const links = [
-    {name: "April 3rd Techno Terminal w/ Sci Fi Sol", link: "https://www.facebook.com/events/462889604644320/"},
+    {name: "Flight - Sunday Sound / Live Stream", link: "https://www.facebook.com/events/288664262114103/"},
     {name: "Flight Mixcloud", link: "https://www.mixcloud.com/FLIGHTPDX/"},    
     {name: "Flight Facebook", link: "https://www.facebook.com/flight.pdx/"},
     {name: "FMPDX", link: "https://www.facebook.com/fmpdx/"},
