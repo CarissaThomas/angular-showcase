@@ -2,7 +2,7 @@
 
 export const links = [
     {name: "Flight Twitch - Live Sundays 6pm-9pm", link: "https://www.twitch.tv/flight_pdx"},
-    {name: "Flight - Sunday Sound / Live Stream", link: "https://www.facebook.com/events/288664262114103/"},
+    {name: "Flight Facebook - Live Sundays 6pm-9pm", link: "https://www.facebook.com/events/288664262114103/"},
     {name: "Flight Mixcloud", link: "https://www.mixcloud.com/FLIGHTPDX/"},    
     {name: "Flight Facebook", link: "https://www.facebook.com/flight.pdx/"},
     {name: "FMPDX", link: "https://www.facebook.com/fmpdx/"},
