@@ -54,6 +54,12 @@ export class AppComponent  {
          break; 
       } 
 
+      case '/label-links': { 
+        this.imageSrc = "../../assets/moduleImages/linkicon.png";
+        this.isImageDisplayed = true;
+         break; 
+      } 
+
       case '/recordlabel': { 
         this.imageSrc = "../../assets/moduleImages/record-label.png";
         this.isImageDisplayed = true;

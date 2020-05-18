@@ -1,0 +1,5 @@
+<h1>Record Label Links</h1>
+<li *ngFor="let link of links"
+  (click)="goToLink(link.link)">
+  <span>{{link.name}}</span>
+</li>
