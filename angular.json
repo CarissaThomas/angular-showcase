@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "flight_pdx_website"
+  "defaultProject": "flight_pdx_website",
+  "cli": {
+    "analytics": "4d1523ec-d663-4179-a71a-5ae63abd827d"
+  }
 }
