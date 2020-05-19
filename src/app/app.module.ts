@@ -15,6 +15,7 @@ import { PhotosComponent } from './photos/photos.component';
 
 import { PhotosService } from "./photos/photos.service";
 import { RecordLabelLinksComponent } from './record-label-links/record-label-links.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
 
@@ -49,8 +50,11 @@ const routes: Routes = [
   {
     path: 'label-links',
     component: RecordLabelLinksComponent
+  },
+  {
+    path: 'sign-up',
+    component: SignUpComponent
   }
-
 ];
 
 @NgModule({
@@ -65,6 +69,7 @@ const routes: Routes = [
     LinksComponent,
     PhotosComponent,
     RecordLabelLinksComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,

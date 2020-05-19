@@ -1,0 +1,22 @@
+@import '../../variables';;
+
+
+form {
+    background-color: $fl-black;
+}
+
+label {
+    color: $fl-red;
+}
+
+.button {
+    background-color: $fl-red !important;
+}
+
+.indicates-required {
+    color: $fl-red !important;
+}
+
+h2 {
+    color: $fl-red !important; 
+}
