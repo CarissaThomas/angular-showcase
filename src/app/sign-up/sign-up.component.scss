@@ -1,22 +1,33 @@
 @import '../../variables';;
-
+@import '../../global.styles.scss';
 
 form {
     background-color: $fl-black;
 }
 
 label {
-    color: $fl-red;
+    color: $fl-purple;
 }
 
 .button {
-    background-color: $fl-red !important;
+    background-color: $fl-purple !important;
 }
 
 .indicates-required {
-    color: $fl-red !important;
+    color: $fl-purple !important;
 }
 
 h2 {
-    color: $fl-red !important; 
+    color: $fl-purple !important;
+    font-family: 'newtown';
+    font-weight: 100 !important;
+}
+
+.asterisk {
+    color: $fl-purple !important; 
+}
+
+h1 {
+    border-bottom: 1px $fl-purple solid;
+    color: $fl-purple;
 }

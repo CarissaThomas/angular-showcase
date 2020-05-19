@@ -72,6 +72,11 @@ export class AppComponent  {
          break; 
       }
       
+      case '/sign-up': { 
+        this.imageSrc = "../../assets/moduleImages/email.png";
+        this.isImageDisplayed = true;
+         break; 
+      }
       
       default: { 
          //statements; 
