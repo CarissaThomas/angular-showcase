@@ -10,7 +10,7 @@ import { EventsComponent } from './events/events.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { RecordLabelComponent } from './record-label/record-label.component';
 import { LinksComponent } from './links/links.component';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { PhotosComponent } from './photos/photos.component';
 
 import { PhotosService } from "./photos/photos.service";
